@@ -17,18 +17,18 @@
   <!-- end of GA -->
 
   <!-- jQuery -->
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
+  <script src="cdn/jquery-3.4.1.min.js" crossorigin="anonymous"></script>
 
   <!-- Simple i18n: https://i18njs.com/ -->
-  <script src="https://i18njs.com/js/i18n.min.js"></script>
+  <script src="cdn/i18n.min.js"></script>
 
   <!-- fake function to bypass the node.js require() code. Must be defined before the local .js files are imported. -->
   <script> function require() { } </script>
 
   <!-- for lib_sthash.js -->
-  <script src="https://cdn.jsdelivr.net/gh/emn178/js-sha256@master/build/sha256.min.js"></script>
+  <script src="cdn/sha256.min.js"></script>
   <!-- for parsers.js -->
-  <script src="https://cdn.jsdelivr.net/gh/NaturalIntelligence/fast-xml-parser@master/lib/parser.min.js"></script>
+  <script src="cdn/parser.min.js"></script>
 
   <!-- local .js files -->
   <script src="algos.js"></script>
@@ -40,7 +40,7 @@
   <script src="utils.js"></script>
 
   <!-- Materialize: Compiled and minified CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <link rel="stylesheet" href="cdn/materialize.min.css">
 
   <link rel="stylesheet" type="text/css" href="style.css">
 
@@ -654,7 +654,7 @@
               <input id="uploadInput" type="file"
                      onchange="checkNumFilesSelected();"
                      multiple accept=".kml,.json,application/xml,text/xml,application/json"/>
-              <a id="HTML_NEXT_STEP" class="btn btn_check_file disabled" href="#" onclick="onClickLetsCheckButton();">Next Step</a>
+              <a id="HTML_NEXT_STEP" class="btn btn_check_file disabled" href="#" onclick="onClickLetsCheckButton();">Lets Check</a>
             </p>
             <div id="drop_zone" ondrop="dropHandler(event);" ondragover="dragOverHandler(event);">
               <label id="HTML_DRAG_DROP_AREA" for="uploadInput"
@@ -705,7 +705,7 @@
   </footer>
 
   <!-- Materialize: Compiled and minified JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+  <script src="cdn/materialize.min.js"></script>
 </body>
 
 </html>

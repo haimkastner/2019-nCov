@@ -1,0 +1,49 @@
+{
+  "name": "2019-ncov",
+  "version": "1.0.0",
+  "description": "Use Google Maps Timeline data to check whether you had contacted the patient or not.",
+  "main": "serve.js",
+  "scripts": {
+    "pack:86" : "pkg .  -t  node12-win-x86  --output ./bundle/ncov_win_x32.exe",
+    "pack:64" : "pkg .  -t  node12-win-x64  --output ./bundle/ncov_win_x64.exe",
+    "pack": "npm run pack:64 && npm run pack:86",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": "serve.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/haimkastner/2019-nCov.git"
+  },
+  "pkg": {
+    "assets": [
+      "nodejs/**/*",
+      "cdn/**/*",
+      "locales/**/*",
+      "images/**/*",
+      "flutter_app/**/*",
+      "countries/**/*",
+      "i18n.js",
+      "index.html",
+      "algos.js",
+      "lib_sthash.js",
+      "merge.js",
+      "meta.js",
+      "parsers.js",
+      "style.css",
+      "test.js",
+      "utils.js"
+    ]
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/haimkastner/2019-nCov/issues"
+  },
+  "homepage": "https://github.com/haimkastner/2019-nCov#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "fs-extra": "^8.1.0",
+    "pkg": "^4.4.4",
+    "static-server": "^2.2.1"
+  }
+}
